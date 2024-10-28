@@ -119,3 +119,10 @@ function encerrarJogo() {
   }
 }
 
+function relogioContador() {
+  let segundos = document.querySelector(".relogio");
+  segundos.innerHTML = `${contar++}`;
+}
+
+entradaDosNumeros();
+setInterval(relogioContador, 1000);
