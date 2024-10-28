@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #eef9bf;
+
+  position: relative;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  margin: 40px auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 5vw;
+  line-height: 66px;
+  text-align: center;
+
+  color: #75b79e;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 1200px;
+  height: auto;
+}
+
+.card {
+  position: relative;
+  width: 120px;
+  aspect-ratio: 3/4;
+  transform-style: preserve-3d;
+  transition: all 400ms ease;
+  border: 1px solid #99cea8;
+  border-radius: 5px;
+  margin: 20px;
+}
+
