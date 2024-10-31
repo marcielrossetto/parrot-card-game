@@ -1,3 +1,3 @@
-# parrot-card-game
-# parrot2
-# parrot-card-game
+Como Jogar -Abra o jogo no navegador. -Digite com quantas cartas quer jogar -Clique nas cartas para virá-las. -Tente encontrar os pares correspondentes de cartas. -Divirta-se com as animações de papagaios dançantes!
+
+Funcionalidades -Jogo de memória de cartas com tema de papagaios. -Animações e transições visuais. -Responsivo, funciona em desktops e dispositivos móveis. -Sistema de aleatoriedade para a disposição das cartas.

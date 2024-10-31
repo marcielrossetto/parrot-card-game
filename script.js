@@ -1,9 +1,7 @@
-// Variaveis globais
 let quantidadeCartas = 0;
 let contador = 0;
 let contar = 0;
 
-// Array com todas as imagens
 const listaImagens = [
   "bobrossparrot",
   "explodyparrot",
@@ -17,7 +15,6 @@ const listaImagens = [
 let listaImagensEmbaralhada = [];
 let listImagensEmbaralhadaDuplicadas = [];
 
-// Abertura da página, conferindo se as entradas do jogador estão de acordo com o solicitado
 
 function entradaDosNumeros() {
   listaImagensEmbaralhada = [];
@@ -72,40 +69,39 @@ function criarCartas() {
   }
 }
 
-// Funções auxiliares
+
 
 let primeiraCarta = "";
 let segundaCarta = "";
 let primeiroPersonagem = "";
 let segundoPersonagem = "";
 
-function flip(item) {  
-  if (primeiraCarta === "") {    
-      primeiraCarta = item;    
-      item.classList.add("flip");    
-      primeiroPersonagem = item.getAttribute("data-parrot");  
-  } else if (segundaCarta === "") {    
-      segundaCarta = item;    
-      item.classList.add("flip");    
-      segundoPersonagem = item.getAttribute("data-parrot");    
-      setTimeout(verificarSeSaoIguais, 1000);  
-  }  
-  contador++; 
+function flip(item) {
+  if (primeiraCarta === "") {
+    primeiraCarta = item;
+    item.classList.add("flip");
+    primeiroPersonagem = item.getAttribute("data-parrot");
+  } else if (segundaCarta === "") {
+    segundaCarta = item;
+    item.classList.add("flip");
+    segundoPersonagem = item.getAttribute("data-parrot");
+    setTimeout(verificarSeSaoIguais, 1000);
+  }
+  contador++;
   setTimeout(encerrarJogo, 500);
 }
 
-function verificarSeSaoIguais() {  
-  if (primeiroPersonagem == segundoPersonagem) {    
-      primeiraCarta = "";    
-      segundaCarta = "";  
-  } else {    
-      primeiraCarta.classList.remove("flip");    
-      segundaCarta.classList.remove("flip");    
-      primeiraCarta = "";    
-      segundaCarta = "";  
+function verificarSeSaoIguais() {
+  if (primeiroPersonagem == segundoPersonagem) {
+    primeiraCarta = "";
+    segundaCarta = "";
+  } else {
+    primeiraCarta.classList.remove("flip");
+    segundaCarta.classList.remove("flip");
+    primeiraCarta = "";
+    segundaCarta = "";
   }
 }
-
 
 function encerrarJogo() {
   const flipedCards = document.querySelectorAll(".flip");
